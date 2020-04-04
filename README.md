@@ -65,6 +65,7 @@ Most items were just time consuming due to downloads and building, bur rather st
 
 Eventually stumbled on [this](https://stackoverflow.com/questions/60467477/android-sdk-tools-option-is-missing-from-sdk-manager-in-android-studio-3-6-1), which prompted me to install the "Android SDK Tools (obsolete)" version, which is hidden unless you uncheck "Hide Obsolete Packages". This, and using Java 8 (which was noted [here](https://dev.to/0xdonut/how-to-install-flutter-on-macos-using-homebrew-and-asdf-3loa)), got things working.
 
-Looking at the Flutter [MacOS installation instructions](https://flutter.dev/docs/get-started/install/macos) again just to see _why_ I had to go through all that agony, I somehow glossed over the [_big, friggin', "Warning" box_](https://flutter.dev/docs/get-started/install/macos#install-android-studio) that describes how to avoid exactly the Penrose Stairs I just went through! (°ㅂ°╬)... (ʘдʘ╬)!!!
+Looking at the Flutter [MacOS installation instructions](https://flutter.dev/docs/get-started/install/macos) again just to see _why_ I had to go through all that agony, I somehow glossed over the [_big, friggin', "Warning" box_](https://flutter.dev/docs/get-started/install/macos#install-android-studio) that describes how to avoid exactly the Penrose Stairs I just went through!  
+(°ㅂ°╬)... (ʘдʘ╬)!!!
 
 Perhaps the real solution was I shouldn't have tried doing all this on April Fools'! ┐(￣ヘ￣ )┌
