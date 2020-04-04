@@ -17,7 +17,7 @@ Flutter study via a QR/barcode scanner mobile app.
 
 ## The Journey
 
-1. [done] install Flutter toolchain for Android [[journey]](#installing-the-flutter-toolchain)
+1. [done] install Flutter toolchain for Android [[journal]](#installing-the-flutter-toolchain)
 1. [done] create, build, run on Android phone, and play around with basic app
 1. [done] implement Basic Specs via any means
 1. [ongoing] add camera zooming functionality
@@ -61,9 +61,9 @@ I have no prior experience to any form of mobile app development. It was easy en
 
 The experience will likely change over time, but right now you _really_ have to pay attention to warning labels or you'll go though some very avoidable pain when installing the toolchain on MacOS Catalina 10.15.3 during April Fools', 2020.
 
-Most items were just time consuming due to downloads and building, bur rather straightforward. The headache came when `flutter doctor` couldn't find `sdkmanager`, which one would assume should be part of the Android Studio installation. [Well, it was, but not quite](https://knowyourmeme.com/memes/well-yes-but-actually-no). So I checked what Android Studio installed, since it installed a bunch of things already, including the Android SDK. One would assume an item labelled "Android SDK Command-line Tools (latest)" or "Andorid SDK Build-Tools" would also include the needed `sdkmanager`, but they weren't. I tried customizing the various paths on the env vars, Android Studio, and Flutter config, to no avail. I also tried installing the standalone sdkmanager, which didn't work either.
+Most items were rather straightforward, just time consuming due to downloads and building. The headache came when `flutter doctor` couldn't find `sdkmanager`, which one would assume should be part of the Android Studio installation. [Well, it was, but not quite](https://knowyourmeme.com/memes/well-yes-but-actually-no). So I checked what Android Studio installed since it already installed a bunch of things including the Android SDK. One would assume an item labelled "Android SDK Command-line Tools (latest)" or "Andorid SDK Build-Tools" would also include the needed `sdkmanager`, but they weren't. I tried customizing the various paths on the env vars, Android Studio, and Flutter config, to no avail. I also tried installing the standalone sdkmanager, which didn't work either.
 
-Eventually stumbled on [this](https://stackoverflow.com/questions/60467477/android-sdk-tools-option-is-missing-from-sdk-manager-in-android-studio-3-6-1), which prompted me to install the "Android SDK Tools (obsolete)" version, which is hidden unless you uncheck "Hide Obsolete Packages". This, and using Java 8 (which was noted [here](https://dev.to/0xdonut/how-to-install-flutter-on-macos-using-homebrew-and-asdf-3loa)), got things working.
+Eventually stumbled on [this](https://stackoverflow.com/questions/60467477/android-sdk-tools-option-is-missing-from-sdk-manager-in-android-studio-3-6-1), which prompted me to install the "Android SDK Tools (obsolete)" version. This item is hidden unless you uncheck "Hide Obsolete Packages". This, and using the older Java 8 runtime (which was noted [here](https://dev.to/0xdonut/how-to-install-flutter-on-macos-using-homebrew-and-asdf-3loa)), finally got things working.
 
 Looking at the Flutter [MacOS installation instructions](https://flutter.dev/docs/get-started/install/macos) again just to see _why_ I had to go through all that agony, I somehow glossed over the [_big, friggin', "Warning" box_](https://flutter.dev/docs/get-started/install/macos#install-android-studio) that describes how to avoid exactly the Penrose Stairs I just went through!  
 (°ㅂ°╬)... (ʘдʘ╬)!!!
