@@ -87,6 +87,9 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             RaisedButton(onPressed: scan, child: const Text('scan')),
+            SelectableText(
+              barcode,
+            )
           ],
         ),
       ),
