@@ -105,6 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Icon(Icons.settings_overscan),
         backgroundColor: Colors.green,
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 
