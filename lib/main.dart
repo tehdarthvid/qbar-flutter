@@ -89,6 +89,10 @@ class _MyHomePageState extends State<MyHomePage> {
             RaisedButton(onPressed: scan, child: const Text('scan')),
             SelectableText(
               barcode,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 32,
+              ),
             ),
             FlatButton(
               child: Text("copy to the clipboard"),
