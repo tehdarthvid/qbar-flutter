@@ -100,6 +100,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: scan,
+        child: Icon(Icons.settings_overscan),
+        backgroundColor: Colors.green,
+      ),
     );
   }
 
