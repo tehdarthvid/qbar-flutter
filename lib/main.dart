@@ -94,8 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             FlatButton(
-              child: Text("copy to the clipboard"),
-              color: Colors.cyan,
+              child: Icon(Icons.content_copy),
               onPressed: () {
                 Clipboard.setData(ClipboardData(text: barcode));
               },
